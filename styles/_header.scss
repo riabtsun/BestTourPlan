@@ -25,18 +25,18 @@
   padding-bottom: 24px;
   justify-content: space-between;
   text-align: center;
-  @include media-breakpoint-up (lg) {
+  @include media-breakpoint-up(lg) {
     text-align: justify;
   }
 }
-.top-header__link {
+.gift-loyalty {
   @include media-breakpoint-up(lg) {
     text-align: right;
     font-size: 10px;
     line-height: 13px;
   }
 }
-.head-info__item {
+.gift-loyalty__item {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -153,6 +153,11 @@ margin-bottom: 20px;
 }
 .nav {
   background: #0a223d;
+  width: 100%;
+}
+.nav-header {
+  display: flex;
+  justify-content: center;
   width: 100%;
 }
 .bot-header {
