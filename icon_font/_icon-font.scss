@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('/icon_font/icomoon.woff2') format('woff2');
+  src: url('/icon_font/icomoon.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.icon {
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-gold-star:before {
+  content: "\e912";
+}
+.icon-mail:before {
+  content: "\e900";
+}
+.icon-phone:before {
+  content: "\e901";
+}
+.icon-map-pin-black:before {
+  content: "\e902";
+}
+.icon-map-pin:before {
+  content: "\e903";
+}
+.icon-insta:before {
+  content: "\e904";
+}
+.icon-youtube:before {
+  content: "\e905";
+}
+.icon-fb:before {
+  content: "\e906";
+}
+.icon-calendar:before {
+  content: "\e907";
+}
+.icon-chekin:before {
+  content: "\e908";
+}
+.icon-phone-call:before {
+  content: "\e909";
+}
+.icon-house:before {
+  content: "\e90a";
+}
+.icon-user:before {
+  content: "\e90b";
+}
+.icon-search:before {
+  content: "\e90c";
+}
+.icon-Stroke:before {
+  content: "\e90d";
+}
+.icon-shop-items:before {
+  content: "\e90e";
+}
+.icon-shopping-cart:before {
+  content: "\e90f";
+}
+.icon-star:before {
+  content: "\e910";
+}
+.icon-present:before {
+  content: "\e911";
+}
