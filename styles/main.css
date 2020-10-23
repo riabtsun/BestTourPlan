@@ -5826,16 +5826,13 @@ img {
   margin-bottom: 42px;
 }
 
-.hotel__stars {
-  padding-bottom: 6px;
-}
-
 .gold-star {
   color: #f2994a;
   font-size: 10px;
 }
 
 .hotel-title {
+  padding-top: 6px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6248,5 +6245,105 @@ img {
 
 .details-box__list {
   padding-left: 0;
+}
+
+.hotel-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #0a223d;
+  border-radius: 8px;
+}
+
+.hotel-card__info {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 44px;
+}
+
+.hotel-card__title {
+  margin: 0;
+  font-size: 18px;
+  line-height: 23px;
+  font-size: 700;
+  color: #fff;
+}
+
+.hotel-card__text {
+  font-size: 14px;
+  line-height: 160.6%;
+  font-weight: 400;
+  max-width: 300px;
+  padding-top: 26px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: justify;
+}
+
+.hotel-card__service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hotel-card__icon {
+  color: #fff;
+}
+
+.hotel-card__icon:nth-child(2) {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.icon-text {
+  color: #fff;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 400;
+  margin-left: 15px;
+}
+
+.hotel-card__old-price {
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+  display: block;
+  padding-top: 38px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+.price-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.price {
+  font-size: 24px;
+  line-height: 30px;
+  color: #fff;
+}
+
+.book-btn {
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  width: 120px;
+  height: 40px;
+  background: #ec1f46;
+  border-radius: 4px;
+  border: none;
 }
 /*# sourceMappingURL=main.css.map */
