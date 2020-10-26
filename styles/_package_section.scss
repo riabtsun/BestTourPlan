@@ -1,7 +1,7 @@
 .package-section {
   background: #f5fafe;
 }
-.package__h2 {
+.package-section__h3 {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -45,7 +45,7 @@ margin-bottom: 0;
   background-color: #000;
   color: #fff;
 }
-.hightlight-list__text {
+.hightlight-text {
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
@@ -84,14 +84,25 @@ padding-bottom: 0;
   }
 }
 .details-box {
+  position: relative;
   background-color: #fff;
-  border-bottom: 1px dashed #E0E0E0; 
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 25px;
+    bottom: 0;
+    width: calc(100% - 50px);
+    border-bottom: 1px dashed #e0e0e0;
+
+  }
 }
 .details-box-2 {
+  padding-bottom: 50px;
   background-color: #fff;
   border-radius: 0 0 8px 8px;
 }
-.details-box__title {
+.details-box-title {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
@@ -99,6 +110,6 @@ padding-bottom: 0;
   padding-top: 38px;
   padding-bottom: 20px;
 }
-.details-box__list {
+.details-box-list {
   padding-left: 0;
 }
