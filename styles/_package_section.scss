@@ -1,7 +1,7 @@
 .package-section {
   background: #f5fafe;
 }
-.package-section__h3 {
+.third-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -91,10 +91,8 @@ padding-bottom: 0;
     position: absolute;
     display: block;
     left: 25px;
-    bottom: 0;
     width: calc(100% - 50px);
     border-bottom: 1px dashed #e0e0e0;
-
   }
 }
 .details-box-2 {

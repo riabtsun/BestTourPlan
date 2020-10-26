@@ -203,11 +203,23 @@
   line-height: 18px;
   padding: 14px;
   color: #333;
-  &:hover {
-    color: #ec1f46;
-    text-decoration: none;
-    border-bottom:  solid  #ec1f46 4px;
+  &:after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    background: red;
+    margin-top: 16px;
+    transition: width 0.3s;
   }
+  &:hover {
+    color: red;
+      &:after {
+        width: 100%;
+      }  
+    }
   @include media-breakpoint-up(lg) {
     padding: 0 0 14px 0;
   }

@@ -6098,10 +6098,25 @@ img {
   color: #333;
 }
 
+.info-list__link:after {
+  content: '';
+  display: block;
+  height: 4px;
+  width: 0%;
+  margin-left: auto;
+  margin-right: auto;
+  background: red;
+  margin-top: 16px;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
 .info-list__link:hover {
-  color: #ec1f46;
-  text-decoration: none;
-  border-bottom: solid  #ec1f46 4px;
+  color: red;
+}
+
+.info-list__link:hover:after {
+  width: 100%;
 }
 
 @media (min-width: 992px) {
@@ -6114,7 +6129,7 @@ img {
   background: #f5fafe;
 }
 
-.package-section__h3 {
+.third-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -6125,7 +6140,7 @@ img {
 }
 
 @media (min-width: 992px) {
-  .package-section__h3 {
+  .third-title {
     text-align: left;
   }
 }
@@ -6234,7 +6249,6 @@ img {
   position: absolute;
   display: block;
   left: 25px;
-  bottom: 0;
   width: calc(100% - 50px);
   border-bottom: 1px dashed #e0e0e0;
 }
@@ -6258,7 +6272,7 @@ img {
   padding-left: 0;
 }
 
-.other_section {
+.packages-section {
   background-color: #f5fafe;
 }
 
@@ -6284,7 +6298,7 @@ img {
   }
 }
 
-.title-h2 {
+.secondary-title {
   padding-top: 105px;
   padding-bottom: 65px;
   font-size: 36px;
@@ -6295,11 +6309,15 @@ img {
 
 .hotel-card__img {
   width: 100%;
-  border-radius: 8px;
+  height: 235px;
+  border-radius: 8px 8px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (min-width: 992px) {
   .hotel-card__img {
+    height: auto;
     width: auto;
   }
 }
@@ -6326,31 +6344,39 @@ img {
 }
 
 .hotel-card__info {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 44px 15px 30px 15px;
+  margin: 0 20px 0 32px;
+  padding: 44px 5px 30px;
 }
 
 @media (min-width: 576px) {
   .hotel-card__info {
-    padding: 44px 0 30px 0;
+    padding: 4px 0 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hotel-card__info {
+    padding: 40px 0 15px;
   }
 }
 
 @media (min-width: 992px) {
   .hotel-card__info {
-    padding: 0 5px 0 5px;
+    padding: 0 5px 9px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 @media (min-width: 1200px) {
   .hotel-card__info {
-    padding: 44px 0 0 0;
+    padding: 44px 0 0;
   }
 }
 
 .hotel-card__title {
   margin: 0;
+  padding-bottom: 22px;
   font-size: 18px;
   line-height: 23px;
   font-size: 700;
@@ -6358,14 +6384,22 @@ img {
 }
 
 .hotel-card__text {
+  display: none;
   font-size: 14px;
-  line-height: 160.6%;
+  line-height: 1.6;
   font-weight: 400;
   max-width: 300px;
   padding-top: 26px;
   padding-bottom: 20px;
   color: #fff;
   text-align: justify;
+}
+
+@media (min-width: 992px) {
+  .hotel-card__text {
+    padding-top: 4px;
+    display: block;
+  }
 }
 
 .hotel-card__service {
@@ -6432,6 +6466,7 @@ img {
   background: #ec1f46;
   border-radius: 4px;
   border: none;
+  text-align: right;
 }
 
 .hotel-card--sm {
@@ -6471,5 +6506,198 @@ img {
 .hotel-card__flash--sm {
   font-size: 8px;
   line-height: 10px;
+}
+
+.reviews {
+  background: #f5fafe;
+  padding-bottom: 70px;
+}
+
+.review {
+  margin-top: 50px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.review__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.review__info::before {
+  content: url("../images/quote-1.png");
+  position: absolute;
+  top: 12px;
+  left: 64px;
+}
+
+.review__info::after {
+  content: url("../images/quote-2.png");
+  position: absolute;
+  bottom: 112px;
+  right: 60px;
+}
+
+.review__name {
+  padding-top: 54px;
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ec1f46;
+  text-align: center;
+}
+
+.review__date {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  text-align: center;
+}
+
+.review__text {
+  padding: 32px 15px 30px 15px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 160%;
+  text-align: justify;
+  max-width: 537px;
+}
+
+@media (min-width: 1200px) {
+  .review__text {
+    padding: 32px 0 30px 0;
+  }
+}
+
+.client-img {
+  border-radius: 50%;
+  position: absolute;
+  top: -45px;
+}
+
+.left-arrow,
+.right-arrow {
+  display: none;
+  position: absolute;
+  top: 50%;
+  border: solid  #828282;
+  border-width: 0 3px 3px 0;
+  padding: 3px;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+@media (min-width: 768px) {
+  .left-arrow,
+  .right-arrow {
+    display: block;
+  }
+}
+
+.right-arrow {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.subscribe {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(10, 34, 61, 0.8))), url("../images/subscribe_bg.jpg");
+  background-image: linear-gradient(rgba(10, 34, 61, 0.8)), url("../images/subscribe_bg.jpg");
+  background-color: rgba(10, 34, 61, 0.8);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 98px;
+  padding-bottom: 88px;
+}
+
+.subscribe__row-1 {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+  color: #fff;
+}
+
+.subscribe__row-2 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.email-area {
+  width: 90%;
+  padding: 12px 20px 15px 32px;
+  position: absolute;
+}
+
+.email-area::-webkit-input-placeholder {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: #bdbdbd;
+}
+
+.email-area:-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: #bdbdbd;
+}
+
+.email-area::-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: #bdbdbd;
+}
+
+.email-area::placeholder {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: #bdbdbd;
+}
+
+@media (min-width: 768px) {
+  .email-area {
+    padding: 12px 20px 15px 32px;
+  }
+}
+
+.mail-btn {
+  padding: 20px;
+  background: #ec1f46;
+  border-radius: 0px 4px 4px 0px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+  border: none;
+  position: absolute;
+  right: 14px;
+}
+
+@media (min-width: 768px) {
+  .mail-btn {
+    right: -40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .mail-btn {
+    right: 10px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
