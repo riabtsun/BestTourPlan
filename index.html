@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="choose online tour for trip">
-  <link rel="stylesheet" href="./scss/bootstrap.scss">
   <link rel="stylesheet" href="./styles/main.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&family=Nunito:wght@400;600;800&display=swap"
@@ -42,7 +41,7 @@
       <div class="container">
         <div class="row mid-header">
           <div class="header-logo col-md-3">
-            <a href="#" aria-label="main page link" class="logo_link"><img src="./images/header_logo.png"
+            <a href="#" aria-label="main page link" class="logo_link"><img src="./images/header_logo.svg"
                 alt="logo"></a>
           </div>
           <div class="col-md-4 offset-md-1">
@@ -122,7 +121,7 @@
         <div class="row">
           <div class="col">
             <div class="hotel-descr">
-              <div class="hotel__stars">
+              <div class="hotel-stars">
                 <span class="icon icon-gold-star gold-star"></span>
                 <span class="icon icon-gold-star gold-star"></span>
                 <span class="icon icon-gold-star gold-star"></span>
@@ -130,7 +129,7 @@
                 <span class="icon icon-gold-star gold-star"></span>
               </div>
               <div class="hotel-title">
-                <span class="hotel-title__name">GRAND HILTON HOTEL</span>
+                <h1><span class="hotel-title__name">GRAND HILTON HOTEL</span></h1>
                 <button class="hotel-title__btn">Flash offer</button>
               </div>
               <span class="services">Half-Board/ All Inclusive + Complimentary Activities + Child Stays
@@ -148,19 +147,42 @@
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <picture>
-                    <source srcset="./images/hotel_photo.webp" type="image/webp">
+                    <source media="(min-width: 576px)" srcset="./images/slider_1x.webp 1x, 
+                            ./images/slider_2x.webp 2x" type="image/webp">
+                    <source media="(min-width: 576px)" srcset="./images/slider_1x.jpg 1x, 
+                            ./images/slider_2x.jpg 2x" type="image/jpeg">
+                    <source srcset="./images/320px/slider_1x.webp 1x, 
+                            ./images/320px/slider_2x.webp 2x" type="image/webp">
+                    <source srcset="./images/320px/slider_1x.jpg 1x, 
+                            ./images/320px/slider_2x.jpg 2x" type="image/jpeg">
                     <img class="d-block w-100" src="./images/hotel_photo.jpg" alt="First slide">
                   </picture>
                 </div>
                 <div class="carousel-item">
                   <picture>
-                    <source srcset="./images/hotel_photo.webp" type="image/webp">
+                    <source media="(min-width: 576px)" srcset="./images/slider_1x.webp 1x, 
+                            ./images/slider_2x.webp 2x" type="image/webp">
+                    <source media="(min-width: 576px)" srcset="./images/slider_1x.jpg 1x, 
+                            ./images/slider_2x.jpg 2x" type="image/jpeg">
+
+                    <source srcset="./images/320px/slider_1x.webp 1x, 
+                            ./images/320px/slider_2x.webp 2x" type="image/webp">
+                    <source srcset="./images/320px/slider_1x.jpg 1x, 
+                            ./images/320px/slider_2x.jpg 2x" type="image/jpeg">
                     <img class="d-block w-100" src="./images/hotel_photo.jpg" alt="First slide">
                   </picture>
                 </div>
                 <div class="carousel-item">
                   <picture>
-                    <source srcset="./images/hotel_photo.webp" type="image/webp">
+                    <source media="(min-width: 576px)" srcset="./images/slider_1x.webp 1x, 
+                            ./images/slider_2x.webp 2x" type="image/webp">
+                    <source media="(min-width: 576px)" srcset="./images/slider_1x.jpg 1x, 
+                            ./images/slider_2x.jpg 2x" type="image/jpeg">
+
+                    <source srcset="./images/320px/slider_1x.webp 1x, 
+                            ./images/320px/slider_2x.webp 2x" type="image/webp">
+                    <source srcset="./images/320px/slider_1x.jpg 1x, 
+                            ./images/320px/slider_2x.jpg 2x" type="image/jpeg">
                     <img class="d-block w-100" src="./images/hotel_photo.jpg" alt="First slide">
                   </picture>
                 </div>
@@ -216,29 +238,29 @@
     </section>
     <section class="package-section">
       <div class="container">
-        <h2 class="package__h2">Package Summery</h2>
+        <h3 class="third-title">Package Summery</h3>
         <div class="row flex-wrap">
           <div class="col-md-6">
             <h4 class="packcage-title">Package Highlights</h4>
             <ul class="hightlight-list">
               <li class="hightlight-list__item"><span class="icon icon-chekin check"></span>
-                <span class="hightlight-list__text">Half Board/ All Inclusive</span>
+                <span class="hightlight-text">Half Board/ All Inclusive</span>
               </li>
               <li class="hightlight-list__item">
                 <span class="icon icon-chekin check"></span>
-                <span class="hightlight-list__text">Child Under 11 Years Stay Free</span>
+                <span class="hightlight-text">Child Under 11 Years Stay Free</span>
               </li class="hightlight-list__item">
               <li class="hightlight-list__item">
                 <span class="icon icon-chekin check"></span>
-                <span class="hightlight-list__text">LUX* Me Spa</span>
+                <span class="hightlight-text">LUX* Me Spa</span>
               </li>
               <li class="hightlight-list__item">
                 <span class="icon icon-chekin check"></span>
-                <span class="hightlight-list__text">Luxurious 5-Star Hotel</span>
+                <span class="hightlight-text">Luxurious 5-Star Hotel</span>
               </li>
               <li class="hightlight-list__item">
                 <span class="icon icon-chekin check"></span>
-                <span class="hightlight-list__text">Banyan An Adult Only Zone</span>
+                <span class="hightlight-text">Banyan An Adult Only Zone</span>
               </li>
             </ul>
           </div>
@@ -246,7 +268,7 @@
             <h4 class="packcage-title">Offer Details</h4>
             <ul class="offer-list">
               <li class="offer-list__item"><span class="icon icon-chekin check"></span>
-                <span class="hightlight-list__text">
+                <span class="hightlight-text">
                   Benefit from a special discounted CHILL’OUT OFFER at Grand Hilton Hotel.
                 </span>
               </li>
@@ -266,137 +288,401 @@
           </div>
           <div class="row details-box">
             <div class="col">
-              <ul class="details-box__list">
-                <li class="details-box__title">Purchase Inclusions</li>
+              <ul class="details-box-list">
+                <li class="details-box-title">Purchase Inclusions</li>
                 <li>
                   <span class="icon icon-chekin check"></span>
-                  <span class="hightlight-list__text">Room as per selection</span>
+                  <span class="hightlight-text">Room as per selection</span>
                 </li>
                 <li>
                   <span class="icon icon-chekin check"></span>
-                  <span class="hightlight-list__text">Half Board or All Inclusive Meal Plan</span>
+                  <span class="hightlight-text">Half Board or All Inclusive Meal Plan</span>
                 </li>
                 <li>
                   <span class="icon icon-chekin check"></span>
-                  <span class="hightlight-list__text">Complimentary Land & Water activities</span>
+                  <span class="hightlight-text">Complimentary Land & Water activities</span>
                 </li>
                 <li>
                   <span class="icon icon-chekin check"></span>
-                  <span class="hightlight-list__text">Child Under 11 years old stays free</span>
+                  <span class="hightlight-text">Child Under 11 years old stays free</span>
                 </li>
                 <li>
                   <span class="icon icon-chekin check"></span>
-                  <span class="hightlight-list__text">Free Wi-Fi</span>
+                  <span class="hightlight-text">Free Wi-Fi</span>
                 </li>
                 <li>
                   <span class="icon icon-chekin check"></span>
-                  <span class="hightlight-list__text">Free Secure Parking</span>
-                </li>
-              </ul>
-            </div>
-            <div class="col">
-              <ul class="details-box__list">
-                <li class="details-box__title">Complimentary Land Based Activities</li>
-                <li>
-                  <span class="icon icon-chekin check"></span>
-                  <span class="hightlight-list__text">Gym</span>
-                </li>
-                <li>
-                  <span class="icon icon-chekin check"></span>
-                  <span class="hightlight-list__text">Beach Volley</span>
-                </li>
-                <li>
-                  <span class="icon icon-chekin check"></span>
-                  <span class="hightlight-list__text">Table tennis</span>
-                </li>
-                <li>
-                  <span class="icon icon-chekin check"></span>
-                  <span class="hightlight-list__text">Soccer balls</span>
-                </li>
-                <li>
-                  <span class="icon icon-chekin check"></span>
-                  <span class="hightlight-list__text">Yoga</span>
-                </li>
-                <li>
-                  <span class="icon icon-chekin check"></span>
-                  <span class="hightlight-list__text">Unlimited access to driving range</span>
+                  <span class="hightlight-text">Free Secure Parking</span>
                 </li>
               </ul>
             </div>
             <div class="col">
-              <ul class="details-box__list">
-                <li class="details-box__title">Complimentary Water Based Activities</li>
+              <ul class="details-box-list">
+                <li class="details-box-title">Complimentary Land Based Activities</li>
                 <li>
                   <span class="icon icon-chekin check"></span>
-                  <span class="hightlight-list__text">Water skiing</span>
+                  <span class="hightlight-text">Gym</span>
                 </li>
                 <li>
                   <span class="icon icon-chekin check"></span>
-                  <span class="hightlight-list__text">Windsurfing</span>
+                  <span class="hightlight-text">Beach Volley</span>
                 </li>
                 <li>
                   <span class="icon icon-chekin check"></span>
-                  <span class="hightlight-list__text">Pedal boats</span>
+                  <span class="hightlight-text">Table tennis</span>
                 </li>
                 <li>
                   <span class="icon icon-chekin check"></span>
-                  <span class="hightlight-list__text">Kayaking</span>
+                  <span class="hightlight-text">Soccer balls</span>
                 </li>
                 <li>
                   <span class="icon icon-chekin check"></span>
-                  <span class="hightlight-list__text">Aqua Gym</span>
+                  <span class="hightlight-text">Yoga</span>
                 </li>
                 <li>
                   <span class="icon icon-chekin check"></span>
-                  <span class="hightlight-list__text">Glass bottom boat trips</span>
+                  <span class="hightlight-text">Unlimited access to driving range</span>
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul class="details-box-list">
+                <li class="details-box-title">Complimentary Water Based Activities</li>
+                <li>
+                  <span class="icon icon-chekin check"></span>
+                  <span class="hightlight-text">Water skiing</span>
+                </li>
+                <li>
+                  <span class="icon icon-chekin check"></span>
+                  <span class="hightlight-text">Windsurfing</span>
+                </li>
+                <li>
+                  <span class="icon icon-chekin check"></span>
+                  <span class="hightlight-text">Pedal boats</span>
+                </li>
+                <li>
+                  <span class="icon icon-chekin check"></span>
+                  <span class="hightlight-text">Kayaking</span>
+                </li>
+                <li>
+                  <span class="icon icon-chekin check"></span>
+                  <span class="hightlight-text">Aqua Gym</span>
+                </li>
+                <li>
+                  <span class="icon icon-chekin check"></span>
+                  <span class="hightlight-text">Glass bottom boat trips</span>
                 </li>
               </ul>
             </div>
           </div>
           <div class="row details-box-2">
             <div class="col">
-              <ul class="details-box__list">
-                <li class="details-box__title">Meal Plan Available</li>
+              <ul class="details-box-list">
+                <li class="details-box-title">Meal Plan Available</li>
                 <li>
                   <span class="icon icon-chekin check"></span>
-                  <span class="hightlight-list__text">Half Board</span>
+                  <span class="hightlight-text">Half Board</span>
                 </li>
                 <li>
                   <span class="icon icon-chekin check"></span>
-                  <span class="hightlight-list__text">All Inclusive</span>
-                </li>
-              </ul>
-            </div>
-            <div class="col">
-              <ul class="details-box__list">
-                <li class="details-box__title">Entertainment</li>
-                <li>
-                  <span class="icon icon-chekin check"></span>
-                  <span class="hightlight-list__text">Live music</span>
-                </li>
-                <li>
-                  <span class="icon icon-chekin check"></span>
-                  <span class="hightlight-list__text">DJ & Mauritian Dance Show</span>
+                  <span class="hightlight-text">All Inclusive</span>
                 </li>
               </ul>
             </div>
             <div class="col">
-              <ul class="details-box__list">
-                <li class="details-box__title">Check In & Check Out</li>
+              <ul class="details-box-list">
+                <li class="details-box-title">Entertainment</li>
                 <li>
                   <span class="icon icon-chekin check"></span>
-                  <span class="hightlight-list__text">Check In Time 14:00</span>
+                  <span class="hightlight-text">Live music</span>
                 </li>
                 <li>
                   <span class="icon icon-chekin check"></span>
-                  <span class="hightlight-list__text">Check Out Time 11:00</span>
+                  <span class="hightlight-text">DJ & Mauritian Dance Show</span>
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul class="details-box-list">
+                <li class="details-box-title">Check In & Check Out</li>
+                <li>
+                  <span class="icon icon-chekin check"></span>
+                  <span class="hightlight-text">Check In Time 14:00</span>
+                </li>
+                <li>
+                  <span class="icon icon-chekin check"></span>
+                  <span class="hightlight-text">Check Out Time 11:00</span>
                 </li>
               </ul>
             </div>
           </div>
-
         </div>
     </section>
+    <section class="packages-section">
+      <div class="container">
+        <h2 class="secondary-title">Other Packages</h2>
+        <div class="row">
+          <div class="col-md-8">
+            <div class="hotel-card">
+              <picture class="hotel-card__img">
+                <source srcset="./images/pk_1.webp 1x, 
+                ./images/pk_1_2x.webp 2x" type="image/webp" class="hotel-card__img">
+                <source srcset="./images/pk_1.jpg 1x, 
+                ./images/pk_1_2x.jpg 2x" type="image/jpeg" class="hotel-card__img">
+                <img src="./images/pk_1.jpg" alt="hotel blue heaven" class="hotel-card__img">
+              </picture>
+              <span class="hotel-card__flash">Flash Offer</span>
+              <div class="hotel-card__info">
+                <div class="hotel-stars">
+                  <span class="icon icon-gold-star gold-star"></span>
+                  <span class="icon icon-gold-star gold-star"></span>
+                  <span class="icon icon-gold-star gold-star"></span>
+                  <span class="icon icon-gold-star gold-star"></span>
+                  <span class="icon icon-gold-star gold-star"></span>
+                </div>
+                <h4 class="hotel-card__title">Hotel Blue Haven</h4>
+                <p class="hotel-card__text">
+                  Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur enim laborum magna llit.
+                  Ipsum est fugiat velit ea llamco do esse ut in veniam sun in onsequat. Aute quis duis epteur
+                  excepteur ipsum occaecat eiusmod nsectetur enim laborum magna mollit. Ipsum est fugiat velit
+                  ea ullamco do
+                </p>
+                <div class="hotel-card__service">
+                  <span class="icon icon-map-pin hotel-card__icon">
+                    <span class="icon-text">1749 Wheeler Ridge Delaware</span>
+                  </span>
+                  <span class="icon icon-user hotel-card__icon">
+                    <span class="icon-text">2 x Guests</span>
+                  </span>
+                  <span class="icon icon-house hotel-card__icon">
+                    <span class="icon-text">1 x Room</span>
+                  </span>
+                </div>
+                <span class="hotel-card__old-price">10,500$</span>
+                <div class="price-btn">
+                  <span class="price">8,500$</span>
+                  <button class="book-btn">Book Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="hotel-card hotel-card--sm">
+              <picture>
+                <source srcset="./images/hotel_belle_1x.webp 1x, 
+                                ./images/hotel_belle_2x.webp 2x" type="image/webp">
+                <source srcset="./images/hotel_belle_1x.jpg 1x, 
+                                ./images/hotel_belee_2x.jpg 2x" type="image/jpeg">
+                <img src="./images/hotel_belle_1x.jpg" alt="LUX* Belle Mare"
+                  class="hotel-card__img hotel-card__img--sm">
+              </picture>
+              <span class="hotel-card__flash hotel-card__flash--sm">Flash Offer</span>
+              <div class="hotel-card__info hotel-card__info--sm">
+                <h4 class="hotel-card__title hotel-card__title--sm">LUX* Belle Mare</h4>
+                <div class="hotel-card__service">
+                  <span class="icon icon-map-pin hotel-card__icon">
+                    <span class="icon-text">1749 Wheeler Ridge Delaware</span>
+                  </span>
+                  <span class="icon icon-user hotel-card__icon">
+                    <span class="icon-text">2 x Guests</span>
+                  </span>
+                  <span class="icon icon-house hotel-card__icon">
+                    <span class="icon-text">1 x Room</span>
+                  </span>
+                </div>
+                <span class="hotel-card__old-price hotel-card__old-price--sm">8,500$</span>
+                <div class="price-btn">
+                  <span class="price">3000$</span>
+                  <button class="book-btn">Book Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="hotel-card hotel-card--sm">
+              <picture>
+                <source srcset="./images/white.webp 1x, 
+                                ./images/white_2x.webp 2x" type="image/webp">
+                <source srcset="./images/white.jpg 1x, 
+                                ./images/white_2x.jpg 2x" type="image/jpeg">
+                <img src="./images/white.jpg" alt="LUX* Belle Mare" class="hotel-card__img hotel-card__img--sm">
+              </picture>
+              <span class="hotel-card__flash hotel-card__flash--sm">Flash Offer</span>
+              <div class="hotel-card__info hotel-card__info--sm">
+                <h4 class="hotel-card__title hotel-card__title--sm">White Palace</h4>
+                <div class="hotel-card__service">
+                  <span class="icon icon-map-pin hotel-card__icon">
+                    <span class="icon-text">1749 Wheeler Ridge Delaware</span>
+                  </span>
+                  <span class="icon icon-user hotel-card__icon">
+                    <span class="icon-text">2 x Guests</span>
+                  </span>
+                  <span class="icon icon-house hotel-card__icon">
+                    <span class="icon-text">1 x Room</span>
+                  </span>
+                </div>
+                <span class="hotel-card__old-price hotel-card__old-price--sm">8,500$</span>
+                <div class="price-btn">
+                  <span class="price">3000$</span>
+                  <button class="book-btn">Book Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="hotel-card hotel-card--sm">
+              <picture>
+                <source srcset="./images/luxury.webp 1x, 
+                                ./images/luxury_x2.webp 2x" type="image/webp">
+                <source srcset="./images/luxury.jpg 1x, 
+                                ./images/luxuty_x2.jpg 2x" type="image/jpeg">
+                <img src="./images/luxury.jpg" alt="LUX* Belle Mare" class="hotel-card__img hotel-card__img--sm">
+              </picture>
+              <span class="hotel-card__flash hotel-card__flash--sm">Flash Offer</span>
+              <div class="hotel-card__info hotel-card__info--sm">
+                <h4 class="hotel-card__title hotel-card__title--sm">Luxury Place</h4>
+                <div class="hotel-card__service">
+                  <span class="icon icon-map-pin hotel-card__icon">
+                    <span class="icon-text">1749 Wheeler Ridge Delaware</span>
+                  </span>
+                  <span class="icon icon-user hotel-card__icon">
+                    <span class="icon-text">2 x Guests</span>
+                  </span>
+                  <span class="icon icon-house hotel-card__icon">
+                    <span class="icon-text">1 x Room</span>
+                  </span>
+                </div>
+                <span class="hotel-card__old-price hotel-card__old-price--sm">8,500$</span>
+                <div class="price-btn">
+                  <span class="price">3000$</span>
+                  <button class="book-btn">Book Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="hotel-card hotel-card--sm">
+              <picture>
+                <source srcset="./images/five.webp 1x, 
+                                ./images/five_2x.webp 2x" type="image/webp">
+                <source srcset="./images/five.jpg 1x, 
+                                ./images/five_2x.jpg 2x" type="image/jpeg">
+                <img src="./images/five.jpg" alt="LUX* Belle Mare" class="hotel-card__img hotel-card__img--sm">
+              </picture>
+              <span class="hotel-card__flash hotel-card__flash--sm">Flash Offer</span>
+              <div class="hotel-card__info hotel-card__info--sm">
+                <h4 class="hotel-card__title hotel-card__title--sm">Hotel Five Star</h4>
+                <div class="hotel-card__service">
+                  <span class="icon icon-map-pin hotel-card__icon">
+                    <span class="icon-text">1749 Wheeler Ridge Delaware</span>
+                  </span>
+                  <span class="icon icon-user hotel-card__icon">
+                    <span class="icon-text">2 x Guests</span>
+                  </span>
+                  <span class="icon icon-house hotel-card__icon">
+                    <span class="icon-text">1 x Room</span>
+                  </span>
+                </div>
+                <span class="hotel-card__old-price hotel-card__old-price--sm">8,500$</span>
+                <div class="price-btn">
+                  <span class="price">3000$</span>
+                  <button class="book-btn">Book Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <h2 class="secondary-title">What people thinks about us</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-1">
+            <span class="left-arrow"></span>
+          </div>
+          <div class="col-md-8 offset-md-1">
+            <div class="review">
+              <div class="review__info">
+                <img class="client-img" src="./images/client.jpg" alt="client photo">
+                <span class="review__name">Megan Fox</span>
+                <span class="review__date">Stayed 18 Nov, 2019</span>
+                <div class="hotel-stars hotel-stars--center">
+                  <span class="icon icon-gold-star gold-star"></span>
+                  <span class="icon icon-gold-star gold-star"></span>
+                  <span class="icon icon-gold-star gold-star"></span>
+                  <span class="icon icon-gold-star gold-star"></span>
+                  <span class="icon icon-gold-star gold-star"></span>
+                </div>
+                <p class="review__text">
+                  It was very nice hotel with cleanliness.
+                  Staff behavior was good and polite. They welcome us very well.
+                  Issue was only that Lift was not in working and we were allotted to
+                  3rd floor and amenities articles were in corner of gallery which were
+                  giving bad feeling. Breakfast was good and support of the staff was
+                  also very nice. Location is not good as per atmosphere, it is very
+                  nearby most of the popular places but self location in a narrow street
+                  is not good. Overall it was a good experience and could recommend.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1 offset-md-1">
+            <span class="right-arrow"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <article class="subscribe">
+      <div class="container">
+        <div class="row">
+          <div class="offset-md-2 col-md-3">
+            <span class="subscribe__row-1">subscribe to our</span>
+            <span class="subscribe__row-2">Newsletter</span>
+          </div>
+          <div class="offset-md-1 col-md-4">
+            <label class="mail-form">
+              <input class="email-area" type="email" placeholder="Your email address">
+              <button class="mail-btn">Send</button>
+            </label>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="activities">
+      <div class="container">
+        <h3 class="third-title">Other Activities</h3>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="active-card">
+              <span class="active-card__name">The curious corner of chamarel</span>
+              <button class="book-btn book-btn--active">Book Now</button>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="active-card active-card--golf">
+              <span class="active-card__name">Gymkhana club golf course</span>
+              <button class="book-btn book-btn--active">Book Now</button>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="active-card active-card--waterfall">
+              <span class="active-card__name">Tamarind falls hiking trip - full day</span>
+              <button class="book-btn book-btn--active">Book Now</button>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="active-card active-card--marine">
+              <span class="active-card__name">The blue marine discovery quest</span>
+              <button class="book-btn book-btn--active">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3 class="third-title"></h3>
+    </article>
   </main>
 
   <script src="./jquery/jquery-3.5.1.slim.min.js"></script>
