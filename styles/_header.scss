@@ -85,6 +85,7 @@ margin-bottom: 20px;
   width: 65px;
   height: 40px;
   background: #ec1f46;
+  border: 1px solid #ec1f46;
   border-radius: 0px 6px 6px 0px;
   @include media-breakpoint-up(sm) {
     margin-top: 0;
@@ -92,7 +93,8 @@ margin-bottom: 20px;
 }
 .search-form__btn-icon {  
   font-size: 20px;
-  color: #fff;
+  color: inherit;
+  
 }
 .shop-list {
   position: relative;

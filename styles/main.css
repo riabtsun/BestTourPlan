@@ -5650,6 +5650,7 @@ input {
   width: 65px;
   height: 40px;
   background: #ec1f46;
+  border: 1px solid #ec1f46;
   border-radius: 0px 6px 6px 0px;
 }
 
@@ -5661,7 +5662,7 @@ input {
 
 .search-form__btn-icon {
   font-size: 20px;
-  color: #fff;
+  color: inherit;
 }
 
 .shop-list {
@@ -5998,6 +5999,24 @@ input {
       flex-wrap: wrap;
 }
 
+@media (min-width: 768px) {
+  .booking-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 992px) {
+  .booking-card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .booking-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6107,6 +6126,22 @@ input {
           align-items: flex-end;
   -ms-flex-line-pack: center;
       align-content: center;
+}
+
+@media (min-width: 768px) {
+  .room-info {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+}
+
+@media (min-width: 992px) {
+  .room-info {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
 }
 
 .booking-card__btn {
