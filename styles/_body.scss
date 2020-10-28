@@ -1,9 +1,19 @@
 body {
-  font-family: 'Mulish', sans-serif;
+  font-family: $mulish;
 }
 a {
   color: #333;
   text-decoration: none;
+  &:hover {
+    color: $btn-color;
+  }
+  &:focus {
+    outline: 2px solid powderblue;
+  }
+  &:active {
+    text-shadow: 3px -1px 4px #fff;
+  }
+  
 }
 ul {
   list-style: none;
@@ -11,5 +21,17 @@ ul {
 img {
   max-width: 100%;
 }
-
-  
+button {
+  border: none;
+  &:hover {
+    color: $btn-color;
+    background-color: #fff;
+    transition: 0.5s;
+  }
+  &:active {
+    box-shadow: 6px 8px 5px -1px rgba(44,14,14,0.44) inset;
+  }
+}
+input {
+  border: none;
+}

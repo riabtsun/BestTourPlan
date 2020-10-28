@@ -1,6 +1,6 @@
 
 .service-header {
-  background: #f5fafe;
+  background: $bg-section;
 }
 .head-info__tel-link,
 .head-info__phone {
@@ -19,7 +19,7 @@
   margin-right: 20px;
 }
 .top-header {
-  background: #f5fafe;
+  background: $bg-section;
   font-weight: 400;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -39,7 +39,7 @@
 }
 .gift-loyalty__item {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding-top: 10px;
   @include media-breakpoint-up(lg) {
@@ -70,7 +70,7 @@ margin-bottom: 20px;
 .search-form__text {
   height: 40px;
   width: 100%;
-  background: #f5fafe;
+  background: $bg-section;
   border-radius: 6px;
 }
 .search-form__text::placeholder {
@@ -84,7 +84,8 @@ margin-bottom: 20px;
   right: 0;
   width: 65px;
   height: 40px;
-  background: #ec1f46;
+  background: $btn-color;
+  border: 1px solid $btn-color;
   border-radius: 0px 6px 6px 0px;
   @include media-breakpoint-up(sm) {
     margin-top: 0;
@@ -92,7 +93,8 @@ margin-bottom: 20px;
 }
 .search-form__btn-icon {  
   font-size: 20px;
-  color: #fff;
+  color: inherit;
+  
 }
 .shop-list {
   position: relative;
@@ -111,7 +113,7 @@ margin-bottom: 20px;
   display: none;
   justify-content: center;
   align-items: center;
-  background: #ec1f46;
+  background: $btn-color;
   color: #fff;
   width: 20px;
   height: 20px;
@@ -131,8 +133,15 @@ margin-bottom: 20px;
     right: 32px;
   }
 }
+.busket:hover {
+  text-decoration: none;
+}
 .dropdown {
   display: none;
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+  }
   @include media-breakpoint-up(md) {
     display: flex;
     align-items: center;
@@ -153,12 +162,13 @@ margin-bottom: 20px;
   margin-left: 24px;
 }
 .nav {
-  background: #0a223d;
+  background: $bg-element;
   width: 100%;
 }
 .nav-header {
   display: flex;
   justify-content: center;
+  margin-left: 0;
   width: 100%;
 }
 .bot-header {
@@ -177,6 +187,12 @@ margin-bottom: 20px;
     flex-direction: row;
     justify-content: space-between;
   }
+  &--lg {
+    display: none;
+    @include media-breakpoint-up(lg) {
+      display: flex;
+    }
+  }
 }
 .nav-list__item {
   padding: 10px;
@@ -192,4 +208,11 @@ margin-bottom: 20px;
   color: #fff;
   text-transform: uppercase;
 }
+.nav-btn {
+  background-color: $btn-color;
+  border: none;
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
 
+}

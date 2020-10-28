@@ -1,5 +1,5 @@
 .package-section {
-  background: #f5fafe;
+  background: $bg-section;
 }
 .third-title {
   font-weight: 700;
@@ -18,7 +18,7 @@
   font-size: 14px;
   line-height: 18px;
   width: 100%;
-  background: #0a223d;
+  background: $bg-element;
   color: #fff;
   padding: 16px 0 16px 24px ;
   margin-bottom: 0;
@@ -34,6 +34,7 @@
   margin-bottom: 20px;
   @include media-breakpoint-up(md){  
     column-count: 2;
+    padding-left: 24px;
   }
 }
 .offer-list {
@@ -44,6 +45,8 @@ margin-bottom: 0;
   border-radius: 50%;
   background-color: #000;
   color: #fff;
+  font-size: 12px;
+  border: 3px solid #000;
 }
 .hightlight-text {
   font-weight: 400;
@@ -79,8 +82,8 @@ margin-bottom: 0;
   padding-bottom: 24px;
 }
 .hightlight-list__item:nth-child(3) {
-  @include media-breakpoint-up(lg){
-padding-bottom: 0;
+  @include media-breakpoint-up(md) {
+    padding-bottom: 0;
   }
 }
 .details-box {
@@ -104,7 +107,7 @@ padding-bottom: 0;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
-  color: #ec1f46;
+  color: $btn-color;
   padding-top: 38px;
   padding-bottom: 20px;
 }

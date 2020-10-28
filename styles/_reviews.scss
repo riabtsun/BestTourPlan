@@ -1,5 +1,5 @@
 .reviews {
-  background: #f5fafe;
+  background: $bg-section;
   padding-bottom: 70px;
 }
 .review {
@@ -18,12 +18,14 @@
     position: absolute;
     top: 12px;
     left: 64px;
+    z-index: 1;
   }
   &::after {
     content: url('../images/quote-2.png');
     position: absolute;
     bottom: 112px;
     right: 60px;
+    z-index: 1;
   }
 }
 .review__name {
@@ -32,7 +34,7 @@
   font-weight: 700;
   font-size: 12px;
   line-height: 15px;
-  color: #ec1f46;
+  color: $btn-color;
   text-align: center;
 }
 .review__date {
@@ -48,6 +50,7 @@
   line-height: 160%;
   text-align: justify;
   max-width: 537px;
+  z-index: 2;
   @include media-breakpoint-up(xl) {
     padding: 32px 0 30px 0;
 
