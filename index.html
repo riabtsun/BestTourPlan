@@ -56,7 +56,7 @@
           </div>
           <div class="col-1 offset-md-1">
             <div class="shop-list">
-              <a href="#" aria-label="go to shopping list">
+              <a href="#" aria-label="go to shopping list" class="busket">
                 <span class="icon icon-shopping-cart shop-cart"></span>
               </a>
               <span class="shop-list__quantity">2</span>
@@ -129,8 +129,6 @@
         </div>
       </div>
     </nav>
-    </div>
-    </div>
   </header>
 
   <main>
@@ -235,22 +233,21 @@
                 <span class="room-info__item-2">
                   <span class="icon icon-house room-icon"></span>
                   1 x Room</span>
-                <a type="tel:12100" class="room-info__item-3">
+                <a href="tel:12100" class="room-info__item-3">
                   <span class="icon icon-phone-call icon-phone"></span>
                   12100</a>
               </div>
               <button class="booking-card__btn">View Other Options</button>
             </div>
-            <iframe class="map"
+            <iframe class="map" title="our location"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.505520369296!2d35.05302421566052!3d48.466016379251066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe2c2a31220a1%3A0x9ffb0c281aeab08e!2z0JrQvtC80L_RjNGO0YLQtdGA0L3QsNGPINGI0LrQvtC70LAgSGlsbGVs!5e0!3m2!1sru!2sua!4v1602943259278!5m2!1sru!2sua"
-              width="100%" height="210" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-              tabindex="0"></iframe>
+              width="100" height="210" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           </div>
         </div>
       </div>
       <div class="container">
         <ul class="info-list">
-          <li><a class="info-list__link" href="#">Package Summery</a></li>
+          <li><a class="info-list__link info-list__link--active" href="#">Package Summery</a></li>
           <li><a class="info-list__link" href="#">Hotel Information</a></li>
           <li><a class="info-list__link" href="#">Rooms</a></li>
           <li><a class="info-list__link" href="#">Facilities & Activities</a></li>
@@ -272,7 +269,7 @@
               <li class="hightlight-list__item">
                 <span class="icon icon-chekin check"></span>
                 <span class="hightlight-text">Child Under 11 Years Stay Free</span>
-              </li class="hightlight-list__item">
+              </li>
               <li class="hightlight-list__item">
                 <span class="icon icon-chekin check"></span>
                 <span class="hightlight-text">LUX* Me Spa</span>
@@ -440,6 +437,7 @@
             </div>
           </div>
         </div>
+      </div>
     </section>
     <section class="packages-section">
       <div class="container">
@@ -661,15 +659,15 @@
     <article class="subscribe">
       <div class="container">
         <div class="row">
-          <div class="offset-md-2 col-md-3">
+          <div class="offset-lg-2 col-lg-3">
             <span class="subscribe__row-1">subscribe to our</span>
             <span class="subscribe__row-2">Newsletter</span>
           </div>
-          <div class="offset-md-1 col-md-4">
-            <label class="mail-form">
+          <div class="offset-lg-1 col-lg-4">
+            <label class="mail-form" aria-label="your email">
               <input class="email-area" type="email" placeholder="Your email address">
-              <button class="mail-btn">Send</button>
             </label>
+            <button class="mail-btn">Send</button>
           </div>
         </div>
       </div>
@@ -768,13 +766,19 @@
             <h4 class="footer-title">social network</h4>
             <ul class="network-list">
               <li class="network-list__item">
-                <a class="network-list__link" href="#"><span class="icon icon-fb"></span></a>
+                <a class="network-list__link" href="#" aria-label="facebook">
+                  <span class="icon icon-fb"></span>
+                </a>
               </li>
               <li class="network-list__item">
-                <a class="network-list__link" href="#"><span class="icon icon-youtube"></span></a>
+                <a class="network-list__link" href="#" aria-label="youtube">
+                  <span class="icon icon-youtube"></span>
+                </a>
               </li>
               <li class="network-list__item">
-                <a class="network-list__link" href="#"><span class="icon icon-insta"></span></a>
+                <a class="network-list__link" href="#" aria-label="instagram">
+                  <span class="icon icon-insta"></span>
+                </a>
               </li>
             </ul>
           </div>
@@ -794,6 +798,7 @@
             <li class="footer-list__item">
               <a class="footer-link" href="#">Privacy</a>
             </li>
+          </ul>
         </div>
       </div>
       <div class="row">
@@ -829,7 +834,7 @@
                 <span class="icon icon-mail"></span>
               </div>
               <div class="col-md-11">
-                <a class="phone-list__link" href="mailto:cherly.lawson@example.com">cherly.lawson@example.com</a>
+                <a class="mail-link" href="mailto:cherly.lawson@example.com">cherly.lawson@example.com</a>
               </div>
             </div>
           </div>
@@ -838,19 +843,19 @@
           <h4 class="footer-title">Send us a message</h4>
           <div class="row">
             <div class="col-md-6">
-              <label class="footer-inputs">
+              <label class="footer-inputs" aria-label="your name">
                 <input class="footer-inputs" type="text" required placeholder="Your Full Name*">
               </label>
             </div>
             <div class="col-md-6">
-              <label class="footer-inputs">
+              <label class="footer-inputs" aria-label="your phone number">
                 <input class="footer-inputs" type="text" required placeholder="Phone Number*">
               </label>
             </div>
           </div>
           <div class="row">
             <div class="col-md-12">
-              <label class="textfield" for="">
+              <label class="textfield" aria-label="your message">
                 <textarea class="textfield" name="textarea" placeholder="Message" rows="4"></textarea>
               </label>
             </div>

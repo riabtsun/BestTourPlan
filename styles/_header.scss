@@ -39,7 +39,7 @@
 }
 .gift-loyalty__item {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding-top: 10px;
   @include media-breakpoint-up(lg) {
@@ -131,8 +131,15 @@ margin-bottom: 20px;
     right: 32px;
   }
 }
+.busket:hover {
+  text-decoration: none;
+}
 .dropdown {
   display: none;
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+  }
   @include media-breakpoint-up(md) {
     display: flex;
     align-items: center;

@@ -155,6 +155,7 @@
   margin-top: 26px;
   border-radius: 10px;
   max-height: 50%;
+  width: 100%;
   @include media-breakpoint-up(md) {
     display: none;
   }
@@ -214,8 +215,10 @@
     margin-top: 16px;
     transition: width 0.3s;
   }
-  &:hover {
+  &:hover,
+  &--active {
     color: red;
+    text-decoration: none;
       &:after {
         width: 100%;
       }  

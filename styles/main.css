@@ -5483,6 +5483,10 @@ img {
   max-width: 100%;
 }
 
+button {
+  border: none;
+}
+
 button:hover {
   color: #ec1f46;
   background-color: #fff;
@@ -5493,6 +5497,10 @@ button:hover {
 button:active {
   -webkit-box-shadow: 6px 8px 5px -1px rgba(44, 14, 14, 0.44) inset;
           box-shadow: 6px 8px 5px -1px rgba(44, 14, 14, 0.44) inset;
+}
+
+input {
+  border: none;
 }
 
 .service-header {
@@ -5554,9 +5562,9 @@ button:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -5716,8 +5724,17 @@ button:active {
   }
 }
 
+.busket:hover {
+  text-decoration: none;
+}
+
 .dropdown {
   display: none;
+  cursor: pointer;
+}
+
+.dropdown:hover {
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
@@ -6059,6 +6076,7 @@ button:active {
   margin-top: 26px;
   border-radius: 10px;
   max-height: 50%;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -6158,11 +6176,12 @@ button:active {
   transition: width 0.3s;
 }
 
-.info-list__link:hover {
+.info-list__link:hover, .info-list__link--active {
   color: red;
+  text-decoration: none;
 }
 
-.info-list__link:hover:after {
+.info-list__link:hover:after, .info-list__link--active:after {
   width: 100%;
 }
 
@@ -6219,6 +6238,7 @@ button:active {
   .offer-list {
     -webkit-column-count: 2;
             column-count: 2;
+    padding-left: 24px;
   }
 }
 
@@ -6231,6 +6251,8 @@ button:active {
   border-radius: 50%;
   background-color: #000;
   color: #fff;
+  font-size: 12px;
+  border: 3px solid #000;
 }
 
 .hightlight-text {
@@ -6280,7 +6302,7 @@ button:active {
   padding-bottom: 24px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .hightlight-list__item:nth-child(3) {
     padding-bottom: 0;
   }
@@ -6498,6 +6520,24 @@ button:active {
           align-items: center;
 }
 
+@media (min-width: 768px) {
+  .price-btn {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 992px) {
+  .price-btn {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .price {
   font-size: 24px;
   line-height: 30px;
@@ -6588,6 +6628,7 @@ button:active {
   position: absolute;
   top: 12px;
   left: 64px;
+  z-index: 1;
 }
 
 .review__info::after {
@@ -6595,6 +6636,7 @@ button:active {
   position: absolute;
   bottom: 112px;
   right: 60px;
+  z-index: 1;
 }
 
 .review__name {
@@ -6621,6 +6663,7 @@ button:active {
   line-height: 160%;
   text-align: justify;
   max-width: 537px;
+  z-index: 2;
 }
 
 @media (min-width: 1200px) {
@@ -6676,6 +6719,12 @@ button:active {
   color: #fff;
 }
 
+@media (min-width: 576px) {
+  .subscribe__row-1 {
+    display: block;
+  }
+}
+
 .subscribe__row-2 {
   font-weight: 600;
   font-size: 36px;
@@ -6725,7 +6774,7 @@ button:active {
 }
 
 .mail-btn {
-  padding: 20px;
+  padding: 18px;
   background: #ec1f46;
   border-radius: 0px 4px 4px 0px;
   font-size: 12px;
@@ -6733,12 +6782,13 @@ button:active {
   color: #fff;
   border: none;
   position: absolute;
+  top: 10px;
   right: 14px;
 }
 
 @media (min-width: 768px) {
   .mail-btn {
-    right: -40px;
+    right: -8px;
   }
 }
 
@@ -6871,7 +6921,8 @@ button:active {
 }
 
 .phone-list__item,
-.phone-list__link {
+.phone-list__link,
+.mail-link {
   font-size: 14px;
   line-height: 1.6;
   color: #bdbdbd;

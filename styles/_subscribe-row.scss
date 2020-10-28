@@ -12,6 +12,9 @@
   font-size: 24px;
   line-height: 30px;
   color: #fff;
+  @include media-breakpoint-up(sm) {
+    display: block;
+  }
 }
 .subscribe__row-2 {
   font-weight: 600;
@@ -35,7 +38,7 @@
   }
 }
 .mail-btn {
-  padding: 20px;
+  padding: 18px;
   background: #ec1f46;
   border-radius: 0px 4px 4px 0px;
   font-size: 12px;
@@ -43,9 +46,10 @@
   color: #fff;
   border: none;
   position: absolute;
+  top: 10px;
   right: 14px;
   @include media-breakpoint-up(md) {
-    right: -40px;
+    right: -8px;
   }
   @include media-breakpoint-up(xl) {
     right: 10px;
