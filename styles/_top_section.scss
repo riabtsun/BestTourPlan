@@ -6,14 +6,14 @@
 }
 .top-section {
   padding-top: 18px;
-  background: #f5fafe;
+  background: $bg-section;
 }
 .hotel-descr {
   padding-right: 0;
   padding-left: 0;
 }
 .breadcrumb {
-  background: #f5fafe;
+  background: $bg-section;
   padding: 0;
   margin-bottom: 42px;
 }
@@ -38,7 +38,7 @@
 .hotel-title__btn {
   width: 70px;
   height: 20px;
-  background: #ec1f46;
+  background: $btn-color;
   border-radius: 3px;
   border: none;
   font-family: inherit;
@@ -56,7 +56,7 @@
 }
 .raiting-info {
   display: none;
-  background: #ec1f46;
+  background: $btn-color;
   border-radius: 4px;
   padding-right: 0;
   padding-left: 0;
@@ -86,7 +86,7 @@
   padding-top: 20px;
 }
 .booking-card {
-  background: #0a223d;
+  background: $bg-element;
   margin-top: 20px;
   border-radius: 8px;
   display: flex;
@@ -104,7 +104,7 @@
   max-height: 210px;
 }
 .booking-info__item-1 {
-  font-family: 'Nunito', sans-serif;
+  font-family: $nunito;
   font-weight: 400;
   font-size: 10px;
   padding-top: 28px;
@@ -112,14 +112,14 @@
   color: #fff;
 }
 .booking-info__item-2 {
-  font-family: 'Nunito', sans-serif;
+  font-family: $nunito;
   font-weight: 800;
   font-size: 24px;
   line-height: 33px;
   color: #fff;
 }
 .booking-info__item-3 {
-  font-family: 'Nunito', sans-serif;
+  font-family: $nunito;
   font-size: 12px;
   line-height: 16px;
   color: #fff;
@@ -133,14 +133,14 @@
 .booking-info__item-3,
 .room-info__item-1,
 .room-info__item-2 {
-  font-family: 'Nunito', sans-serif;
+  font-family: $nunito;
   font-size: 12px;
   line-height: 16px;
   color: #fff;
 }
 .booking-info__item-4,
 .room-info__item-3 {
-  font-family: 'Nunito', sans-serif;
+  font-family: $nunito;
   font-weight: 600;
   font-size: 18px;
   line-height: 25px;
@@ -186,7 +186,7 @@
 .booking-card__btn {
   width: 85%;
   height: 45px;
-  background: #ec1f46;
+  background: $btn-color;
   border: none;
   border-radius: 4px;
   font-weight: 600;

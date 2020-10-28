@@ -1,5 +1,5 @@
 .package-section {
-  background: #f5fafe;
+  background: $bg-section;
 }
 .third-title {
   font-weight: 700;
@@ -18,7 +18,7 @@
   font-size: 14px;
   line-height: 18px;
   width: 100%;
-  background: #0a223d;
+  background: $bg-element;
   color: #fff;
   padding: 16px 0 16px 24px ;
   margin-bottom: 0;
@@ -107,7 +107,7 @@ margin-bottom: 0;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
-  color: #ec1f46;
+  color: $btn-color;
   padding-top: 38px;
   padding-bottom: 20px;
 }

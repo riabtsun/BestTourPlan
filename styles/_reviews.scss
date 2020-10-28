@@ -1,5 +1,5 @@
 .reviews {
-  background: #f5fafe;
+  background: $bg-section;
   padding-bottom: 70px;
 }
 .review {
@@ -34,7 +34,7 @@
   font-weight: 700;
   font-size: 12px;
   line-height: 15px;
-  color: #ec1f46;
+  color: $btn-color;
   text-align: center;
 }
 .review__date {

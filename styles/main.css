@@ -5360,7 +5360,7 @@ input[type="button"].btn-block {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../icon_font/icomoon.woff2") format("woff2"), url("../icon_font/icomoon.woff") format("woff");
+  src: url("../icon_font/icomoon.woff") format("woff"), url("../icon_font/icomoon.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -5455,7 +5455,7 @@ input[type="button"].btn-block {
 }
 
 body {
-  font-family: 'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
 }
 
 a {
@@ -6029,7 +6029,7 @@ input {
 }
 
 .booking-info__item-1 {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 400;
   font-size: 10px;
   padding-top: 28px;
@@ -6038,7 +6038,7 @@ input {
 }
 
 .booking-info__item-2 {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 800;
   font-size: 24px;
   line-height: 33px;
@@ -6046,7 +6046,7 @@ input {
 }
 
 .booking-info__item-3 {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 12px;
   line-height: 16px;
   color: #fff;
@@ -6063,7 +6063,7 @@ input {
 .booking-info__item-3,
 .room-info__item-1,
 .room-info__item-2 {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 12px;
   line-height: 16px;
   color: #fff;
@@ -6071,7 +6071,7 @@ input {
 
 .booking-info__item-4,
 .room-info__item-3 {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 600;
   font-size: 18px;
   line-height: 25px;
@@ -6839,7 +6839,7 @@ input {
 }
 
 .active-card {
-  background-image: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%), url("../images/bar.jpg");
+  background-image: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0a223d 99.85%), url("../images/bar.jpg");
   border-radius: 6px;
   width: 255px;
   height: 255px;
@@ -6860,15 +6860,15 @@ input {
 }
 
 .active-card--golf {
-  background-image: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%), url("../images/golf.jpg");
+  background-image: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0a223d 99.85%), url("../images/golf.jpg");
 }
 
 .active-card--waterfall {
-  background-image: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%), url("../images/waterfall.jpg");
+  background-image: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0a223d 99.85%), url("../images/waterfall.jpg");
 }
 
 .active-card--marine {
-  background-image: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%), url("../images/marine.jpg");
+  background-image: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0a223d 99.85%), url("../images/marine.jpg");
 }
 
 .active-card__name {

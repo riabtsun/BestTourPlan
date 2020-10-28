@@ -1,11 +1,11 @@
 .packages-section {
-  background-color: #f5fafe;
+  background-color: $bg-section;
 }
 .hotel-card {
   display: flex;
   flex-direction: column;
   position: relative;
-  background: #0a223d;
+  background: $bg-element;
   border-radius: 8px;
   @include media-breakpoint-up(lg) {
     flex-direction: row;
@@ -35,7 +35,7 @@
   justify-content: center;
   align-items: center;
   padding: 8px 20px 8px 12px;
-  background: #ec1f46;
+  background: $btn-color;
   border-radius: 0px 4px 4px 0px;
   top: 34px;
   font-weight: 600;
@@ -132,7 +132,7 @@
   font-size: 14px;
   line-height: 19px;
   padding: 10px 26px;
-  background: #ec1f46;
+  background: $btn-color;
   border-radius: 4px;
   border: none;
   text-align: right;

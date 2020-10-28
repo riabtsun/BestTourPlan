@@ -1,6 +1,6 @@
 
 .service-header {
-  background: #f5fafe;
+  background: $bg-section;
 }
 .head-info__tel-link,
 .head-info__phone {
@@ -19,7 +19,7 @@
   margin-right: 20px;
 }
 .top-header {
-  background: #f5fafe;
+  background: $bg-section;
   font-weight: 400;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -70,7 +70,7 @@ margin-bottom: 20px;
 .search-form__text {
   height: 40px;
   width: 100%;
-  background: #f5fafe;
+  background: $bg-section;
   border-radius: 6px;
 }
 .search-form__text::placeholder {
@@ -84,8 +84,8 @@ margin-bottom: 20px;
   right: 0;
   width: 65px;
   height: 40px;
-  background: #ec1f46;
-  border: 1px solid #ec1f46;
+  background: $btn-color;
+  border: 1px solid $btn-color;
   border-radius: 0px 6px 6px 0px;
   @include media-breakpoint-up(sm) {
     margin-top: 0;
@@ -113,7 +113,7 @@ margin-bottom: 20px;
   display: none;
   justify-content: center;
   align-items: center;
-  background: #ec1f46;
+  background: $btn-color;
   color: #fff;
   width: 20px;
   height: 20px;
@@ -162,7 +162,7 @@ margin-bottom: 20px;
   margin-left: 24px;
 }
 .nav {
-  background: #0a223d;
+  background: $bg-element;
   width: 100%;
 }
 .nav-header {
@@ -209,7 +209,7 @@ margin-bottom: 20px;
   text-transform: uppercase;
 }
 .nav-btn {
-  background-color: #ec1f46;
+  background-color: $btn-color;
   border: none;
   @include media-breakpoint-up(lg) {
     display: none;
