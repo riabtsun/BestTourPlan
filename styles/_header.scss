@@ -159,6 +159,7 @@ margin-bottom: 20px;
 .nav-header {
   display: flex;
   justify-content: center;
+  margin-left: 0;
   width: 100%;
 }
 .bot-header {
@@ -177,6 +178,12 @@ margin-bottom: 20px;
     flex-direction: row;
     justify-content: space-between;
   }
+  &--lg {
+    display: none;
+    @include media-breakpoint-up(lg) {
+      display: flex;
+    }
+  }
 }
 .nav-list__item {
   padding: 10px;
@@ -192,4 +199,11 @@ margin-bottom: 20px;
   color: #fff;
   text-transform: uppercase;
 }
+.nav-btn {
+  background-color: #ec1f46;
+  border: none;
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
 
+}
