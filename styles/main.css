@@ -5463,12 +5463,36 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: #ec1f46;
+}
+
+a:focus {
+  outline: 2px solid powderblue;
+}
+
+a:active {
+  text-shadow: 3px -1px 4px #fff;
+}
+
 ul {
   list-style: none;
 }
 
 img {
   max-width: 100%;
+}
+
+button:hover {
+  color: #ec1f46;
+  background-color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+button:active {
+  -webkit-box-shadow: 6px 8px 5px -1px rgba(44, 14, 14, 0.44) inset;
+          box-shadow: 6px 8px 5px -1px rgba(44, 14, 14, 0.44) inset;
 }
 
 .service-header {
